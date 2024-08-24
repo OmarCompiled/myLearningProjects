@@ -1,6 +1,8 @@
 #include <cstdlib>
 #include <iostream>
 
+// This is my recreation of a pico CTF called "Binary Search"
+
 int main() {
   // Defining important ints
   int highestNumber = 100, inputNumber = 0, rounds = 1;
