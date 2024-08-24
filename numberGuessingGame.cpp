@@ -1,8 +1,6 @@
 #include <cstdlib>
 #include <iostream>
 
-// This is my recreation of a pico CTF called "Binary Search"
-
 int main() {
   // Defining important ints
   int highestNumber = 100, inputNumber = 0, rounds = 1;
@@ -60,7 +58,6 @@ int main() {
     int guessCount = 0;
     while (inputNumber != targetNumber) {
 
-      // if else statements to manage out-of-range inputs      
       if (difficulty == 1 && inputNumber > 100) {
         std::cout << "The number you entered was out of range!" << std::endl;
         std::cout << "---------------------" << std::endl;
@@ -103,12 +100,6 @@ int main() {
 
       if (guessCount == 10) {
         std::cout << "Hint: Try using Binary Search" << std::endl;
-      } else if (guessCount == 20) {
-        std::cout << "Hurry up! We have no time." << std::endl;
-      } else if (guessCount == 25) {
-        std::cout << "You were raided by the FBI :(" << std::endl;
-        std::cout << "Better luck next time ;)" << std::endl;
-        break;
       }
     }
 
